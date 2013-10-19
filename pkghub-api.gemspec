@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["github@tinycat.co.uk"]
   spec.description   = %q{Gem for accessing the pkghub.io API}
   spec.summary       = %q{Gem for accessing the pkghub.io API, uploading packages and making changes}
-  spec.homepage      = ""
+  spec.homepage      = "https://pkghub.io"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
