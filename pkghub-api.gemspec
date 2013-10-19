@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Andy Sykes"]
   spec.email         = ["github@tinycat.co.uk"]
   spec.description   = %q{Gem for accessing the pkghub.io API}
-  spec.summary       = %q{Gem for accessing the pkghub.io API}
+  spec.summary       = %q{Gem for accessing the pkghub.io API, uploading packages and making changes}
   spec.homepage      = ""
   spec.license       = "MIT"
 
