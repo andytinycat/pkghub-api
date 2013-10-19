@@ -1,6 +1,6 @@
 # Pkghub::API
 
-This gem lets you interact with the [pkghub.io](pkghub.io) API. pkghub.io is a SaaS platform
+This gem lets you interact with the (pkghub.io)[pkghub.io] API. pkghub.io is a SaaS platform
 for hosting Ubuntu packages either publically or privately.
 
 pkghub.io is currently undergoing active development and is not feature-complete.
@@ -34,6 +34,8 @@ To upload a package:
 If it succeeds you'll see:
 
     Success
+
+If it fails, you'll get an informative (hopefully) error message in your shell.
 
 You can find your API token on your profile page, which is located at: `https://pkghub.io/users/yourusername`,
 or can be found by logging in and clicking the "Your Profile" link in the top right. Don't reveal this
