@@ -1,0 +1,57 @@
+#!/usr/bin/env ruby
+
+require 'pkghub/api'
+require 'pkghub/api/version'
+require 'ostruct'
+require 'commander'
+
+require 'rubygems'
+require 'commander/import'
+
+program :name, 'pkghub'
+program :version, Pkghub::API::VERSION
+program :description, 'Tool to interact with the pkghub.io API'
+
+command :upload do |c|
+  c.syntax = 'pkghub upload [options]'
+  c.description = 'Uploads a package to a project on pkghub.io'
+  c.option '--token TOKEN', String, 'API token with access to given project'
+  c.option '--project PROJECT', String, 'Project to upload to'
+  c.option '--distro DISTRO', String, 'Name of distro package is for (e.g. precise)'
+  c.option '--file FILE', String, 'File to upload'
+  c.action do |args, options|
+
+    if options.token == nil
+      puts "You must specify a token with --token"
+      exit 1
+    end
+
+    if options.project == nil
+      puts "You must specify a project with --project"
+      exit 1
+    end
+
+    if options.distro == nil
+      puts "You must specify a distro with --distro"
+      exit 1
+    end
+
+    if options.file == nil
+      puts "You must specify a file with --file"
+      exit 1
+    end
+
+    pkg = Pkghub::API::Package.new({
+      :path => options.file,
+      :distro => options.distro
+    })
+
+#    begin
+      pkg.upload(options.project, options.token)
+#    rescue => e
+#      puts "Error: #{e.message}"
+#      exit 2
+#    end
+
+  end
+end

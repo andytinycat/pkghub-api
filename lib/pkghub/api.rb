@@ -1,7 +1,7 @@
 require "pkghub/api/version"
+require "pkghub/api/package"
 
 module Pkghub
-  module Api
-    # Your code goes here...
+  module API
   end
 end
