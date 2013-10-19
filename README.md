@@ -1,6 +1,6 @@
 # Pkghub::API
 
-This gem lets you interact with the (pkghub.io)[pkghub.io] API. pkghub.io is a SaaS platform
+This gem lets you interact with the [pkghub.io](https://pkghub.io) API. pkghub.io is a SaaS platform
 for hosting Ubuntu packages either publically or privately.
 
 pkghub.io is currently undergoing active development and is not feature-complete.
