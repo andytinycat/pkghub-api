@@ -50,9 +50,9 @@ module Pkghub
           end
 
           if res.code == "200"
-            raise "Error uploading to pkghub.io API, code: #{res.code} body: #{res.body}"
-          else
             puts "Success"
+          else
+            raise "Error uploading to pkghub.io API, code: #{res.code} body: #{res.body}"
           end
         end
 
