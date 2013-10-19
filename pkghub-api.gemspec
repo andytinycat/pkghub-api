@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Pkghub::Api::VERSION
   spec.authors       = ["Andy Sykes"]
   spec.email         = ["github@tinycat.co.uk"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Gem for accessing the pkghub.io API}
+  spec.summary       = %q{Gem for accessing the pkghub.io API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
