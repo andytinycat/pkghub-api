@@ -46,12 +46,12 @@ command :upload do |c|
       :distro => options.distro
     })
 
-#    begin
+    begin
       pkg.upload(options.project, options.token)
-#    rescue => e
-#      puts "Error: #{e.message}"
-#      exit 2
-#    end
+    rescue => e
+      puts "Error: #{e.message}"
+      exit 2
+    end
 
   end
 end

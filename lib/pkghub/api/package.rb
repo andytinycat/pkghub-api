@@ -35,7 +35,6 @@ module Pkghub
       def upload(project, token)
 
         uri = URI.parse("https://pkghub.io/api/v1/upload")
-        puts uri.inspect
         n = Net::HTTP.new(uri.host, uri.port)
         n.use_ssl = true
 
